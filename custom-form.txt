@@ -1,0 +1,20 @@
+<script>
+var firstName = document.querySelector("#wpforms-1283-field_4").value;
+var lastName = document.querySelector("#wpforms-1283-field_4-last").value;
+var email = document.querySelector("#wpforms-1283-field_2").value;
+var phone = document.querySelector("#wpforms-1283-field_3").value;
+var message = document.querySelector("#wpforms-1283-field_5").value;
+
+window.dataLayer || []
+window.dataLayer.push({
+    "event": "form_lead",
+    "form": [{
+        "first_name": firstName,
+        "last_name": lastName,
+        "email": email,
+        "phone": phone,
+        "message": message
+    }]
+})
+
+</script>
